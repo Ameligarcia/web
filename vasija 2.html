@@ -1,0 +1,264 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanias mexicanas</title>
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffe0;
+            color: #333;
+        }
+
+        header {
+            background-color: #e77d48;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-titulo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: left;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .nav-botones {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-boton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #d2691e;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            height: fit-content;
+        }
+
+        .nav-boton:hover {
+            background-color: #f1a86d;
+            transform: translateY(-2px);
+        }
+
+        .contenido {
+            background-image: url(fondo\ 7.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(235, 56, 235, 0.7);
+            padding: 40px;
+            margin: 20px;
+            margin-bottom: 100px;
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            min-height: 300px;
+        }
+
+        .contenido h2 {
+            font-size: 42px;
+            text-transform: uppercase;
+            margin-top: -10px;
+            margin-bottom: 40px;
+            color: #000;
+            text-shadow: none;
+        }
+
+        .contenedor-imagen-texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 10px;
+        }
+
+        .imagen-destacada {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            box-shadow: none;
+            margin-top: -20px;
+        }
+
+        .cuadro-texto {
+            width: 50%;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+            border: none;
+            margin-top: -40px;
+            margin-left: -95px;
+        }
+
+        .cuadro-texto h3 {
+            font-size: 28px;
+            color: #000;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: none;
+        }
+
+        .cuadro-texto p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #000;
+            text-shadow: none;
+        }
+
+        .enlace {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #e97f42;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .enlace:hover {
+            background-color: #f1a86d;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background-color: #a4540e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .logo-titulo {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .nav-botones {
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            header h1 {
+                text-align: center;
+                font-size: 28px;
+            }
+            
+            .contenido h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+            
+            .contenedor-imagen-texto {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .imagen-destacada {
+                width: 80%;
+                height: auto;
+                max-width: 300px;
+            }
+            
+            .cuadro-texto {
+                width: 80%;
+                padding: 20px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="icono.png" alt="Logo Artesanías Mexicanas" class="logo">
+            <h1>Artesanías Mexicanas</h1>
+        </div>
+    
+        <div class="nav-botones">
+            <a href="index.html" class="nav-boton">Inicio</a>
+            <a href="VASIJAS.HTML" class="nav-boton">Vasijas</a>
+            <a href="vasija 1.html" class="nav-boton">Vasija A.</a>
+            <a href="vasija 3.html" class="nav-boton">Vasija P.</a>
+            <a href="vasija 4.html" class="nav-boton">Sarape A.</a>
+        </div>
+    </header>
+
+    <div class="contenido">
+        
+        <div class="contenedor-imagen-texto">
+            <img src="vasija 2.png" alt="Vasija artesanal mexicana" class="imagen-destacada">
+            
+            <div class="cuadro-texto">
+                <h3>Vasija De Barro</h3>
+                <p> Esta vasija de barro mexicana es una pieza de alfarería con una forma distintiva y una 
+                    decoración rica en detalles. Presenta un cuerpo redondeado que se estrecha hacia un cuello angosto,
+                     con dos asas laterales que añaden un toque clásico. El color predominante es un tono terracota intenso, 
+                     que sirve de fondo para los diseños en negro y blanco. La decoración central consiste en una figura de 
+                     búho estilizada, con alas extendidas y ojos grandes y expresivos, rodeada de motivos florales y geométricos. </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Esta pagina web fue creada por Ameli Olivarez, Mi Revista, <a href="revista.html">Revista</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanias mexicanas</title>
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffe0;
+            color: #333;
+        }
+
+        header {
+            background-color: #e77d48;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-titulo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: left;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .nav-botones {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-boton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #d2691e;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            height: fit-content;
+        }
+
+        .nav-boton:hover {
+            background-color: #f1a86d;
+            transform: translateY(-2px);
+        }
+
+        .contenido {
+            background-image: url(fondo\ 7.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(235, 56, 235, 0.7);
+            padding: 40px;
+            margin: 20px;
+            margin-bottom: 100px;
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            min-height: 300px;
+        }
+
+        .contenido h2 {
+            font-size: 42px;
+            text-transform: uppercase;
+            margin-top: -10px;
+            margin-bottom: 40px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            background-color: transparent;
+            padding: 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .imagen {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 3px solid #e77d48;
+            background-color: transparent; /* Fondo transparente para las imágenes */
+            padding: 5px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .imagen:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .enlace {
+            display: block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: #e97f42;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            width: 180px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .enlace:hover {
+            background-color: #f1a86d;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            background-color: #a4540e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .logo-titulo {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+            
+            .nav-botones {
+                justify-content: center;
+                margin-top: 15px;
+            }
+            
+            header h1 {
+                text-align: center;
+                font-size: 28px;
+            }
+            
+            .contenido h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+            
+            .galeria {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .producto {
+                width: 80%;
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+            
+            .imagen {
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+            }
+            
+            .enlace {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="icono.png" alt="Logo Artesanías Mexicanas" class="logo">
+            <h1>Artesanías Mexicanas</h1>
+        </div>
+    
+        <div class="nav-botones">
+            <a href="index.html" class="nav-boton">Inicio</a>
+            <a href="SARAPES.html" class="nav-boton">Sarapes</a>
+            <a href="SOMBREROS.html" class="nav-boton">Sombreros</a>
+            <a href="ALEBRIJES.HTML" class="nav-boton">Alebrijes</a>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <h2>Nuestros Productos</h2>
+        
+        <div class="galeria">
+            <div class="producto">
+                <img src="vasija 1.png" alt="Ver mas" class="imagen">
+                <a href="vasija 1.html" class="enlace">VER MAS</a>
+            </div>
+            
+            <div class="producto">
+                <img src="vasija 2.png" alt="Ver mas" class="imagen">
+                <a href="vasija 2.html" class="enlace">VER MAS</a>
+            </div>
+            
+            <div class="producto">
+                <img src="vasija 3.png" alt="Ver mas" class="imagen">
+                <a href="vasija 3.html" class="enlace">VER MAS</a>
+            </div>
+            
+            <div class="producto">
+                <img src="vasija 4.png" alt="Ver mas" class="imagen">
+                <a href="vasija 4.html" class="enlace">VER MAS</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Esta pagina web fue creada por Ameli Olivarez, Mi Revista, <a href="revista.html">Revista</a></p>
+    </footer>
+</body>
+</html>
